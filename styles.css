@@ -1,0 +1,21 @@
+/* Default: desktop table shown */
+.impdates-desktop {
+    display: table;
+}
+
+/* Default: mobile table hidden */
+.impdates-mobile {
+    display: none;
+}
+
+/* Switch on smaller screens */
+@media (max-width: 768px) {
+
+    .impdates-desktop {
+        display: none !important;
+    }
+
+    .impdates-mobile {
+        display: table !important;
+    }
+}
